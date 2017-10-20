@@ -11,9 +11,11 @@ import Foundation
 
 class MainVC: UIViewController {
 
-    // MARK - Variables
+    // MARK: - Variables
     var csv: CSV!
+    var vehicle: Vehicle!
     
+    // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,13 @@ class MainVC: UIViewController {
         let fileType = "csv"
         
         let csv = CSVDataService.instance.readDataFromCSV(fileName: fileName, fileType: fileType)
-        print(csv)
+        //print(csv)
+        let csvRows = CSVDataService.instance.csvSplit(dataFile: csv)
+        print(csvRows[1])
+        print("records: \(csvRows.count)")
+        for row in csvRows {
+            
+        }
     }
     
 

@@ -16,6 +16,7 @@
 		5F69A4F61F9945650021E679 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F69A4F51F9945650021E679 /* CSV.swift */; };
 		5F69A4F81F9980800021E679 /* e2017.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5F69A4F01F9942E70021E679 /* e2017.csv */; };
 		5F69A4FC1F9A29F40021E679 /* CSVDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F69A4FB1F9A29F40021E679 /* CSVDataService.swift */; };
+		5F69A4FE1F9A5DE60021E679 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F69A4FD1F9A5DE60021E679 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5F69A4F01F9942E70021E679 /* e2017.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = e2017.csv; sourceTree = "<group>"; };
 		5F69A4F51F9945650021E679 /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		5F69A4FB1F9A29F40021E679 /* CSVDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDataService.swift; sourceTree = "<group>"; };
+		5F69A4FD1F9A5DE60021E679 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				5F69A4F51F9945650021E679 /* CSV.swift */,
+				5F69A4FD1F9A5DE60021E679 /* Vehicle.swift */,
 				5F69A4E21F9942A60021E679 /* CSV2CoreData.xcdatamodeld */,
 			);
 			path = model;
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F69A4FE1F9A5DE60021E679 /* Vehicle.swift in Sources */,
 				5F69A4E41F9942A60021E679 /* CSV2CoreData.xcdatamodeld in Sources */,
 				5F69A4FC1F9A29F40021E679 /* CSVDataService.swift in Sources */,
 				5F69A4F61F9945650021E679 /* CSV.swift in Sources */,

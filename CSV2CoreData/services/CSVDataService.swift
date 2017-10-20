@@ -17,7 +17,7 @@ class CSVDataService {
             do {
                 print(filepath)
                 var contents = try String(contentsOfFile: filepath)
-                //print(contents)
+                contents = csvClean(dataFile: contents)
                 return contents
             } catch {
                 print("contents could not be loaded")
@@ -28,9 +28,16 @@ class CSVDataService {
         return ("invalid path")
     }
     
-    func createRows(data: String) -> [[String]] {
+    func csvClean(dataFile: String) -> String {
+        var cleanCSV = dataFile
+        cleanCSV = cleanCSV.replacingOccurrences(of: "\r", with: "\n")
+        cleanCSV = cleanCSV.replacingOccurrences(of: "\n\n", with: "\n")
+        return cleanCSV
+    }
+    
+    func csvSplit(dataFile: String) -> [[String]] {
         var result: [[String]] = []
-        let rows = data.components(separatedBy: "\n")
+        let rows = dataFile.components(separatedBy: "\n")
         for row in rows {
             let columns = row.components(separatedBy: ",")
             result.append(columns)
